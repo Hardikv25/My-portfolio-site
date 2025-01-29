@@ -8,8 +8,8 @@ interface BlogPageProps {
     params: { blogId: string };
 }
 
-function Page({ params }: BlogPageProps) {
-    const { blogId } = params;
+async function Page({ params }: BlogPageProps) {
+    const { blogId } = await params; // Ensure params is resolved if it's a Promise
 
     // Find the blog with the matching ID
     const selectedBlog = blogdetails.find((blog) => blog.id.toString() === blogId);
