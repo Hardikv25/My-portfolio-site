@@ -2,6 +2,7 @@ import React from 'react';
 import { blogdetails } from '../page';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Page({ params }: { params: { blogId: string } }) {
     const { blogId } = params;
@@ -11,12 +12,12 @@ function Page({ params }: { params: { blogId: string } }) {
 
     return (
         <div>
-            <a href="/blogs">
+            <Link href="/blogs">
                 <div className='flex text-2xl text-blue-700 mt-5'>
                     <FaArrowLeftLong className='my-auto mx-2' />
                     <p>Blog</p>
                 </div>
-            </a>
+            </Link>
             {selectedBlog ? (
                 <div>
                     <div className='text-center lg:text-left lg:flex lg:justify-between items-end my-5'>

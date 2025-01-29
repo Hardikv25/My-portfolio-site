@@ -4,6 +4,7 @@ import blog1 from '../../../public/image/blog4.jpeg'
 import blog2 from '../../../public/image/blog2.jpeg'
 import blog3 from '../../../public/image/blog3.jpeg'
 import blog4 from '../../../public/image/blog1.jpeg'
+import Link from 'next/link'
 
 export const blogdetails = [
   {
@@ -82,14 +83,14 @@ const page = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10 pt-5 my-10'>
         {blogdetails.map((blog) => (
           <div key={blog.id}>
-            <a href={`./blogs/${blog.id}`}>
+            <Link href={`./blogs/${blog.id}`}>
               <div className="relative shadow-2xl w-[100%] rounded-3xl col-span-1 overflow-hidden border border-gray-300">
                 <Image src={blog.blogimg} alt="img1" width={1000} className="w-[100%] h-[300px] md:h-[400px] object-cover" />
                 <div className="absolute top-4 left-4 bg-white text-gray-800 px-3 py-1 rounded-md shadow-md">
                   <span className="text-lg font-semibold">{blog.blogtitle}</span>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
 

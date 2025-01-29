@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PiCodesandboxLogo } from "react-icons/pi";
+// import { PiCodesandboxLogo } from "react-icons/pi";
 import { CiTwitter, CiLinkedin } from "react-icons/ci";
 import { RxInstagramLogo } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
