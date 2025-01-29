@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      spacing: {
+        'row-offset': '6.5rem', // Custom spacing value
+        'row-offset2': '-6.5rem',
+      },
     },
   },
   plugins: [],
