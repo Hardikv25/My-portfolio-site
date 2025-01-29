@@ -4,7 +4,11 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
 
-function Page({ params }: { params: { blogId: string } }) {
+interface BlogPageProps {
+    params: { blogId: string };
+}
+
+function Page({ params }: BlogPageProps) {
     const { blogId } = params;
 
     // Find the blog with the matching ID
@@ -36,7 +40,7 @@ function Page({ params }: { params: { blogId: string } }) {
                         </div>
                     </div>
                     <hr />
-                    <div className="w-full flex flex-col items-center text-lg py-10" >
+                    <div className="w-full flex flex-col items-center text-lg py-10">
                         <Image
                             src={selectedBlog.blogimg}
                             alt="Blog Image"
@@ -44,15 +48,15 @@ function Page({ params }: { params: { blogId: string } }) {
                             height={400}
                             className="rounded-3xl border w-auto shadow-lg"
                         />
-                        <div className="max-w-[600px] mt-6 space-y-4 text-gray-800 leading-relaxed">{selectedBlog.para.split('\n').map((paragraph, index) => (
+                        <div className="max-w-[600px] mt-6 space-y-4 text-gray-800 leading-relaxed">
+                            {selectedBlog.para.split('\n').map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
                         </div>
                     </div>
-
                 </div>
             ) : (
-                <h1 className=' font-bold flex h-[400px] text-5xl items-center justify-center'>Blog Not Found</h1>
+                <h1 className='font-bold flex h-[400px] text-5xl items-center justify-center'>Blog Not Found</h1>
             )}
         </div>
     );
