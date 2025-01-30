@@ -4,8 +4,12 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
 
-function Page({ params }: { params: { blogId: string } }) {
-    const { blogId } = params;
+interface BlogPageProps {
+    params: { blogId: string };
+}
+
+function Page({ params }: BlogPageProps) {
+    const { blogId } = params; // ❌ Removed `await` ✅
 
     // Find the blog with the matching ID
     const selectedBlog = blogdetails.find((blog) => blog.id.toString() === blogId);
