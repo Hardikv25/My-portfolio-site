@@ -4,14 +4,14 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface BlogPageProps {
+type PageProps = {
     params: { blogId: string };
-}
+};
 
-function Page({ params }: BlogPageProps) {
-    const { blogId } = params; // ❌ Removed `await` ✅
+export default function Page({ params }: PageProps) {
+    const { blogId } = params;
 
-    // Find the blog with the matching ID
+    // Ensure blogdetails is properly accessed
     const selectedBlog = blogdetails.find((blog) => blog.id.toString() === blogId);
 
     return (
@@ -61,5 +61,3 @@ function Page({ params }: BlogPageProps) {
         </div>
     );
 }
-
-export default Page;
