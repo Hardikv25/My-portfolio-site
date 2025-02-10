@@ -1,17 +1,17 @@
+'use client'
+
 import React from 'react';
 import { blogdetails } from '../page';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
-type PageProps = {
-    params: { blogId: string };
-};
 
-export default function Page({ params }: PageProps) {
-    const { blogId } = params;
 
-    // Ensure blogdetails is properly accessed
+export default function Page() {
+    const params = useParams();
+    const blogId = params.blogId as string;
     const selectedBlog = blogdetails.find((blog) => blog.id.toString() === blogId);
 
     return (
@@ -60,4 +60,4 @@ export default function Page({ params }: PageProps) {
             )}
         </div>
     );
-}
+};
