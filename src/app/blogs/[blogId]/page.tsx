@@ -7,12 +7,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-interface Params {
-    blogId: string;
-}
 
 export default function Page() {
-    const params = useParams() // Explicitly type `params`
+    const params = useParams() 
     const blogId = params.blogId;
     const selectedBlog = blogdetails.find((blog) => blog.id.toString() === blogId);
 
