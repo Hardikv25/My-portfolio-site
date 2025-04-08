@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import myimg from '../../../public/image/myimg.jpeg'
+import myimg from '../../../public/image/myimg2.jpeg'
 import { FaCode } from "react-icons/fa6";
 
 function Intro() {
@@ -21,7 +21,7 @@ function Intro() {
                 {introdetails.map((intro, index) => (
                     <div key={index} className="items-center content-start pr-5 sm:content-center">
 
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl leading-[55px] sm:leading-[65px] md:leading-[85px]  font-bold text-center sm:text-left ">{intro.title}</h1>
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl leading-[55px] sm:leading-[65px] md:leading-[85px] font-bold text-center sm:text-left ">{intro.title}</h1>
 
                         <p className="my-3 w-auto text-center sm:text-left text-2xl  sm:text-2.5xl md:text-3xl">{intro.description}</p>
 
