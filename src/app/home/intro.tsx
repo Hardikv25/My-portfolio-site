@@ -23,7 +23,7 @@ function Intro() {
 
                         <h1 className="text-[40px] sm:text-6xl md:text-7xl leading-[55px] sm:leading-[65px] md:leading-[85px] font-bold text-center sm:text-left ">{intro.title}</h1>
 
-                        <p className="my-3 w-auto text-center sm:text-left text-2xl  sm:text-2.5xl md:text-3xl">{intro.description}</p>
+                        <p className="my-3 w-auto text-center sm:text-left text-xl  sm:text-2.5xl md:text-3xl">{intro.description}</p>
 
                         
                             <div className="flex gap-2 flex-wrap">

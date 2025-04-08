@@ -6,8 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className='border-t-2 pt-10 px-5 sm:flex sm:justify-between'>
-
+    <div className='border-t-2 py-6 sm:pt-10 px-5 sm:flex sm:justify-between'>
       <div className="flex mb-5 sm:mb-0 justify-center items-center">
         <IoIosAt className="mt-0.5" size={22} />
         <p>2025 Hardik</p>

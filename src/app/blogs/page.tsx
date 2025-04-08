@@ -3,9 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { blogdetails } from './blogdata';
 
-
 const page = () => {
-
 
   return (
     <div className='py-12 sm:py-16'>
