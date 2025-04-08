@@ -34,11 +34,11 @@ const page = () => {
     <>
     <div className='text-center pt-10'>
       <p className='text-xl text-gray-800'>Browse My Recent</p>
-      <h1 className='text-6xl font-bold text-gray-800'>Projects</h1>
+      <h1 className='text-5xl sm:text-6xl font-bold text-gray-800'>Projects</h1>
     </div>
     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-16 lg:mx-10 gap-5'>
       {projects.map((pro)=>(
-      <div key={pro.id} className={`border border-sky-700  py-5 ${pro.colspan} justify-items-center px-10 rounded-3xl shadow-2xl w-auto bg-gray-50 `}>
+      <div key={pro.id} className={`border border-sky-700  py-5 ${pro.colspan} justify-items-center px-4 sm:px-10 rounded-3xl shadow-2xl w-auto bg-gray-50 `}>
         <Image src={pro.proimg} alt="SpecsImg" className='w-[100%] h-[300px] shadow-2xl border-2 object-cover rounded-3xl object-top'/>
         <h1 className='text-3xl font-bold text-gray-800 my-5'>{pro.title}</h1>
         <div className='md:flex justify-center gap-2'>

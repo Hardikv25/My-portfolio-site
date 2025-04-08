@@ -10,9 +10,9 @@ export default function Skills() {
         { id: 5, name: "TailwindCSS", colSpan: "col-span-2 sm:col-span-3" },
     ]
     return (
-        <div className='my-14 text-center'>
-            <h1 className='font-bold text-5xl sm:text-5xl text-gray-800'>Skills & Expertise</h1>
-            <p className='w-auto sm:w-[75%] md:w-[50%] my-3 sm:my-10 text-xl mx-auto'>
+        <div className='my-18 sm:my-14 text-center'>
+            <h1 className='font-bold text-[35px] sm:text-5xl text-gray-800'>Skills & Expertise</h1>
+            <p className='w-auto sm:w-[75%] md:w-[50%] my-3 sm:my-10 text-md sm:text-xl mx-auto'>
                 <span>I specialize in frontend and backend technologies. Below, you can explore my key skills and the tools I use to build efficient and scalable solutions.</span>
             </p>
 

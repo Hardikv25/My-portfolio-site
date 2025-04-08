@@ -8,12 +8,12 @@ const page = () => {
 
 
   return (
-    <div className='py-16'>
+    <div className='py-12 sm:py-16'>
       <div className='text-center sm:text-left text-gray-800'>
-        <h1 className='md:text-left font-bold text-6xl leading-[75px] sm:leading-0'>My Tech Blog</h1>
-        <p className='md:text-left text-2xl max-w-[475px] py-6'>See my most recent projects below to get an idea of my past experience.</p>
+        <h1 className='md:text-left font-bold text-[40px] sm:text-6xl leading-[75px] sm:leading-0'>My Tech Blog</h1>
+        <p className='md:text-left text-xl sm:text-2xl max-w-[475px] py-4 sm:py-6'>See my most recent projects below to get an idea of my past experience.</p>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10 pt-5 my-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 pt-5 my-8 sm:my-10'>
         {blogdetails.map((blog) => (
           <div key={blog.id}>
             <Link href={`./blogs/${blog.id}`}>

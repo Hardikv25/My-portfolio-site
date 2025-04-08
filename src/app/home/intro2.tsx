@@ -36,7 +36,7 @@ export default function Intro2() {
                     <div className='w-auto sm:mx-2 sm:w-[300px] col-span-1'>
                         <div className='flex sm:flex-none sm:block mb-3 sm:mb-0'>
                             <item.icon size={40} className='fill-sky-400' />
-                            <h1 className='ml-2 sm:m-0  font-bold sm:py-3 text-gray-700 text-4xl text-left'>{item.title}</h1>
+                            <h1 className='ml-2 sm:m-0  font-bold sm:py-3 text-gray-700 text-[28px] sm:text-4xl text-left'>{item.title}</h1>
                         </div>
 
                         <p className='text-left text-sky-700 mb-3'>{item.para}</p>

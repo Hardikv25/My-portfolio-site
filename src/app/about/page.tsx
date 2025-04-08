@@ -24,16 +24,16 @@ const page = () => {
 
   return (
     <>
-      <div className='my-20 justify-items-center'>
-        <h1 className='text-7xl font-bold my-5'>About</h1>
-        <p className='w-auto sm:w-[75%] md:w-[50%] my-2 sm:my-5 text-center text-2xl mx-auto'>Thanks for stopping by. Read below to learn more about myself and my background.</p>
-        <Image src={aboutme} className="rounded-3xl shadow-2xl shadow-slate-500 object-cover object-top my-14 h-[450px]" alt="aboutme" width={800} height={400} />
+      <div className='my-16 md:my-20 justify-items-center'>
+        <h1 className='text-5xl sm:text-7xl font-bold my-5'>About</h1>
+        <p className='w-auto sm:w-[75%] md:w-[50%] my-2 sm:my-5 text-center text-xl sm:text-2xl mx-auto'>Thanks for stopping by. Read below to learn more about myself and my background.</p>
+        <Image src={aboutme} className="rounded-3xl shadow-2xl shadow-slate-500 object-cover object-top my-12 sm:my-14 h-[450px]" alt="aboutme" width={800} height={400} />
       </div>
       <div className='my-10'>
         {aboutdetails.map((about) => (
           <div key={about.id} className=' lg:grid lg:grid-cols-6  my-5'>
             <h1 className='font-bold text-2xl col-span-1 text-left '>{about.title}</h1>
-            <p className='text-lg text-left col-span-5'>{about.description}</p>
+            <p className='text-md text-left col-span-5'>{about.description}</p>
           </div>
         ))}
       </div>

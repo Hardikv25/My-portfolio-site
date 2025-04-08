@@ -17,11 +17,11 @@ function Intro() {
 
     return (
         <>
-            <div className=" mx-2 sm:mx-10 sm:my-10 sm:mt-18 sm:flex justify-between">
+            <div className="sm:mx-10 sm:my-10 sm:mt-18 sm:flex justify-between">
                 {introdetails.map((intro, index) => (
-                    <div key={index} className="items-center content-start pr-5 sm:content-center">
+                    <div key={index} className="items-center content-start sm:content-center">
 
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl leading-[55px] sm:leading-[65px] md:leading-[85px] font-bold text-center sm:text-left ">{intro.title}</h1>
+                        <h1 className="text-[40px] sm:text-6xl md:text-7xl leading-[55px] sm:leading-[65px] md:leading-[85px] font-bold text-center sm:text-left ">{intro.title}</h1>
 
                         <p className="my-3 w-auto text-center sm:text-left text-2xl  sm:text-2.5xl md:text-3xl">{intro.description}</p>
 

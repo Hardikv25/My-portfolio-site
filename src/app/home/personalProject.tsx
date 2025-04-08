@@ -38,10 +38,10 @@ export default function PersonalProject() {
     return (
         
 
-        <div className='py-10 md:px-5 lg:px-10'>
+        <div className='py-8 sm:py-10 md:px-5 lg:px-10'>
             <div className="flex flex-col md:flex-row  justify-between items-center gap-6 md:gap-10">
                 <div className="text-center md:text-left">
-                    <h1 className="text-5xl text-gray-800 md:text-6xl font-bold">
+                    <h1 className="text-4xl text-gray-800 md:text-6xl font-bold">
                         Personal Projects
                     </h1>
                     <p className="text-lg text-gray-600 my-5 md:text-2xl max-w-[300px] md:max-w-[600px] mx-auto md:mx-0">
@@ -50,7 +50,7 @@ export default function PersonalProject() {
                 </div>
 
                 <a href="/project">
-                    <button className="flex items-center shadow-2xl text-lg md:text-2xl text-white bg-gradient-to-r from-cyan-400 to-blue-900 px-6 md:px-10 hover:bg-gradient-to-r hover:from-cyan-300 hover:to-blue-800 py-4 rounded-full">
+                    <button className="flex items-center shadow-2xl text-lg md:text-2xl text-white bg-gradient-to-r from-cyan-400 to-blue-900 px-6 md:px-10 hover:bg-gradient-to-r hover:from-cyan-300 hover:to-blue-800 py-3 md:py-4 rounded-full">
                         <p>View All</p>
                         <FaArrowRight className="ml-2" />
                     </button>
