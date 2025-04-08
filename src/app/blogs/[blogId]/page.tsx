@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { blogdetails } from '../page';
+import { blogdetails } from '../blogdata';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
