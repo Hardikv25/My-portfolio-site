@@ -1,7 +1,9 @@
 import React from 'react'
 import travelimg from '../../../public/image/travelimg.png'
 import eyewearimg from '../../../public/image/eyewear.webp';
-import grocery from '../../../public/image/grocery.webp'
+// import grocery from '../../../public/image/grocery.webp'
+import supporthub from '../../../public/image/supporthub.png'
+
 import Image from 'next/image';
 
 const page = () => {
@@ -11,21 +13,31 @@ const page = () => {
       id: 1,
       title: "EyeBeam",
       proimg: eyewearimg,
-      link:"https://github.com/Hardikv25/eyebeam",
+      live:"https://github.com/Hardikv25/eyebeam",
+      git:"https://github.com/Hardikv25/eyebeam",
       colspan : "col-span-1 md:col-span-1 xl:col-span-1",
     },
     {
       id: 2,
       title: "Tour & Travel",
       proimg: travelimg,
-      link:"https://github.com/Hardikv25/hmtourtravel",
+      live:"https://github.com/Hardikv25/hmtourtravel",
+      git:"https://github.com/Hardikv25/hmtourtravel",
       colspan : "col-span-1 md:col-span-1 xl:col-span-1",
     },
+    // {
+    //   id: 3,
+    //   title: "Grocery",
+    //   proimg: grocery,
+    //   link:"https://github.com/Hardikv25/grocery_management_System",
+    //   colspan : "col-span-1 md:col-span-2 xl:col-span-1",
+    // },
     {
       id: 3,
-      title: "Grocery",
-      proimg: grocery,
-      link:"https://github.com/Hardikv25/grocery_management_System",
+      title: "SupportHub",
+      proimg: supporthub,
+      live:"https://support-hub-pearl.vercel.app/",
+      git:"https://github.com/Vyom2663/support-hub",
       colspan : "col-span-1 md:col-span-2 xl:col-span-1",
     }
   ]
@@ -42,8 +54,8 @@ const page = () => {
         <Image src={pro.proimg} alt="SpecsImg" className='w-[100%] h-[300px] shadow-2xl border-2 object-cover rounded-3xl object-top'/>
         <h1 className='text-3xl font-bold text-gray-800 my-5'>{pro.title}</h1>
         <div className='md:flex justify-center gap-2'>
-            <a href={pro.link}><p className='border my-5 md:my-0 border-gray-600 hover:bg-gray-600 hover:text-white rounded-full py-2 px-8'>Github</p></a>
-            <a href={pro.link}><p className='border border-gray-600 hover:bg-gray-600 hover:text-white rounded-full py-2 px-5'>Live Demo</p></a>
+            <a href={pro.git}><p className='border my-5 md:my-0 border-gray-600 hover:bg-gray-600 hover:text-white rounded-full py-2 px-8'>Github</p></a>
+            <a href={pro.live}><p className='border border-gray-600 hover:bg-gray-600 hover:text-white rounded-full py-2 px-5'>Live Demo</p></a>
         </div>
       </div>
       ))}

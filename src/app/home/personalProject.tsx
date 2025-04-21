@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { FaArrowRight } from "react-icons/fa";
 import travelimg from '../../../public/image/travelimg.png'
 import eyewearimg from '../../../public/image/eyewear.webp';
-import grocery from '../../../public/image/grocery.webp'
+// import grocery from '../../../public/image/grocery.webp'
+import supporthub from '../../../public/image/supporthub.png'
 import extimg from '../../../public/image/ext.png'
 
 export default function PersonalProject() {
@@ -23,9 +24,9 @@ export default function PersonalProject() {
         },
         {
             id: 3,
-            title: "Grocery",
-            image: grocery,
-            link: "https://github.com/Hardikv25/grocery_management_System",
+            title: "Supporthub",
+            image: supporthub,
+            link: "https://support-hub-pearl.vercel.app/",
         },
         {
             id: 4,
