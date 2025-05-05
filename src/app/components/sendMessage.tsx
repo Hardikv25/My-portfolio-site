@@ -7,7 +7,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 export default function sendmessage() {
     const openMailbox=()=>{
         const emailAddress="virashardik2003@gmail.com"
-        window.location.href = `mailto:${emailAddress}?subject=Hello&body=This is a test email.`;
+        window.location.href = `mailto:${emailAddress}`;
     }
     return (
         <div className='flex py-10 sm:py-14 border-t-2 flex-col md:flex-row justify-between items-center'>
