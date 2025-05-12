@@ -3,9 +3,8 @@ import Image from 'next/image';
 import { FaArrowRight } from "react-icons/fa";
 import travelimg from '../../../public/image/travelimg.png'
 import eyewearimg from '../../../public/image/eyewear.webp';
-// import grocery from '../../../public/image/grocery.webp'
 import supporthub from '../../../public/image/supporthub.png'
-import extimg from '../../../public/image/ext.png'
+import MultiStepForm from '../../../public/image/multi-step-form.png';
 
 export default function PersonalProject() {
 
@@ -30,9 +29,9 @@ export default function PersonalProject() {
         },
         {
             id: 4,
-            title: "ABC",
-            image: extimg,
-            link: "/projects",
+            title: "Multi-step-form",
+            image: MultiStepForm,
+            link: "https://multi-step-form-web-application.vercel.app/",
         },
     ]
 
